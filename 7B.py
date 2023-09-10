@@ -1,28 +1,21 @@
-class Employee:
-    def	init__(self):
-        self.name = "" 
-        self.empId = "" 
-        self.dept = "" 
-        self.salary = 0
-
-    def getEmpDetails(self):
-        self.name = input("Enter Employee name : ") 
-        self.empId = input("Enter Employee ID : ")        
-        self.dept = input("Enter Employee Dept : ")
-        self.salary = int(input("Enter Employee Salary : "))
-
-    def showEmpDetails(self): print("Employee Details")     
-    print("Name : ", self.name) 
-    print("ID : ", self.empId) 
-    print("Dept : ", self.dept) 
-    print("Salary : ", self.salary)
-
-    def updateSalary(self):
-        self.salary = int(input("Enter new Salary : "))
-        print("Updated Salary", self.salary)
-
-e1 = Employee()
- 
-e1.getEmpDetails() 
-e1.showEmpDetails() 
-e1.updateSalary()
+class employee:
+    def __init__(self):
+        self.name = ""
+        self.empID = ""
+        self.dept = ""
+        self.salary = ""
+    def getEmpDet(self):
+        self.name = input("Enter The Name of the employee : ")
+        self.empID = input("Enter the ID : ")
+        self.dept = input("Emter the working department : ")
+        self.salary = input("Enter the Salary : ")
+    def showEmpDet(self): 
+        print("Name : ",self.name,"\nEmployee ID : ",self.empID,"\nDepartment : ",self.dept,"\nSalary : ",self.salary)
+    def updatesal(self):
+        self.salary = int(input("Enter New Salary : "))
+        print("Updated Salary ")
+e1 = employee()
+e1.getEmpDet()
+e1.showEmpDet()
+e1.updatesal()
+e1.showEmpDet()
