@@ -1,5 +1,4 @@
 class Shape:
-
     def area(self):
         pass
 class  Triangle(Shape):
@@ -19,18 +18,18 @@ class Rectangle(Shape):
         self.width = width 
     def area(self):
         return self.length * self.width 
-b=int(input("Enter the value of base")) 
-h=int(input("Enter the value of height"))
- 
+print("--------------------------------------------------")
+b=int(input("Enter the value of base :")) 
+h=int(input("Enter the value of height :"))
 triangle = Triangle(b,h)
-print("Area of the Triangle:", triangle.area())
-r=int(input("Enter the value of radius"))
-
+print("Area of the Triangle :", triangle.area())
+print("--------------------------------------------------")
+r=int(input("Enter the value of radius :"))
 circle = Circle(r)
-print ("Area of the Circle:", circle.area())
-
-
-l=int(input("Enter the value of Length"))
-w=int(input("Enter the value of width")) 
+print ("Area of the Circle :", circle.area())
+print("--------------------------------------------------")
+l=int(input("Enter the value of Length :"))
+w=int(input("Enter the value of width :")) 
 rectangle = Rectangle(l, w)
-print ("Area of the Rectangle:", rectangle.area())
+print ("Area of the Rectangle :", rectangle.area())
+print("--------------------------------------------------")
