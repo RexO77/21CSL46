@@ -1,9 +1,8 @@
-num = int(input("Enter a interger : "))
-string = str(num)
-if string == string[::-1]:
-    print("It is a palindrome")
+str1 = input("Enter the String : ")    #reuced to 8 lines
+if str1 == str1[::-1]:
+    print("It is a Palindrome")
 else:
-    print("It is Not a Palindrome")
+    print("It is NOT a Palindrome")
 for i in range(10):
-    if string.count(str(i))>0:
-        print(str(i),"Appears",string.count(str(i)),"Times")
+    if str1.count(str(i))>0:
+        print(str(i),"appears",str1.count(str(i)),"Times")
